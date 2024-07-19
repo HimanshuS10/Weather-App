@@ -1,52 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Weather Network</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-    <div class="main-image">
-        <div class="container">
-            <h1><span>Weather App</span></h1>
-        </div>
-    </div>
-
-    <div class="card">
+    <div class="main_page">
         <div class="search">
-            <input type="text" placeholder="enter city name" spellcheck="false">
-            <button><img src="images/search.png"></button>
+            <input id="cityName" type="text" placeholder="Enter A City">
+            <button id="searchCityBtn">Search</button>
         </div>
-        <div class="error">
-            <p>Invalid City Name</p>
-        </div>
-        <div class="weather">
-            <img class="weather-icon" src="images/rain.png">
-            <h1 class="temp">22c</h1>
-            <h2 class="city">Paris</h2>
-            
-            <div class="details">
-                <div class="col">
-                    <img src="images/humidity.png" alt="">
-                    <div>
-                        <p class="humidity">50%</p>
-                        <p>Humidity</p>
+
+        <div class="container">
+            <div class="container-1">
+                <div class="box1">
+                    <div class="weather-info">
+                        <h1>New York</h1>
+                        <label>Chance of raining:</label>
+                        <label for="">12%</label>
+                        <p>time: 3:00 PM</p>
+                    </div>
+
+                    <div class="image-weather">
+                        <img src="img/sun.png" alt="">
                     </div>
                 </div>
-                <div class="col">
-                    <img src="images/wind.png" alt="">
-                    <div>
-                        <p class="wind">15 km/h</p>
-                        <p>Wind Speed</p>
+
+
+
+
+                <div class="container-1">
+                    <div class="box2">
+                        <div class="stats-1">
+                            <div class="block-1">
+                                <img src="img/sun.png" alt="">
+                                <div>
+                                    <p class="humidity">50%</p>
+                                    <p>Humidity</p>
+                                </div>
+                            </div>
+                            <div class="block-2">
+                                <img src="img/sun.png" alt="">
+                                <div>
+                                    <p class="humidity">50%</p>
+                                    <p>Humidity</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stats-2">
+                            <div class="block-3">
+                                <img src="img/sun.png" alt="">
+                                <div>
+                                    <p class="humidity">50%</p>
+                                    <p>Humidity</p>
+                                </div>
+                            </div>
+                            <div class="block-4">
+                                <img src="img/sun.png" alt="">
+                                <div>
+                                    <p class="number">50%</p>
+                                    <p>Humidity</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
+                </div>
+            </div>
+            <div class="container-2">
+                <div class="box3">
+                    <h1>New York</h1>
+                    <p>time: 3:00 PM</p>
+                    <p>time: 3:00 PM</p>
                 </div>
             </div>
         </div>
     </div>
 
-<script src="script.js"></script>
-
+    <script src="app.js"></script>
 </body>
+
 </html>
